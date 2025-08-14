@@ -1,0 +1,19 @@
+s       lda z
+        sub zA
+        sto z
+        lda y
+        bra z
+s2      sto y
+        out y
+        brp s
+        hlt
+        dat 1000
+        dat 2 // add till
+        dat 2
+        dat 2
+        dat 2
+y       dat 2 // here
+z       dat 114
+        bra s2
+zA      dat 1
+
